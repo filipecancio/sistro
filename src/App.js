@@ -1,11 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Mapa from './components/map/Mapa'
 
-function App() {
-  return (
-    <div>
-    </div>
-  );
+class App extends React.Component {
+
+  state = {
+    viewport: {
+      latitude: -22.8218457,
+      longitude: -47.0781176,
+      zoom: 15,
+    }
+  };
+
+  render() {
+    return (
+      <Mapa propriedades={this.state.viewport}/>
+    );
+  }
 }
 
 export default App;
