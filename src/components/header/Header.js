@@ -7,7 +7,7 @@ const Header = () => (
         <Navbar.Brand>
           <Navbar.Item href="#">
             <img
-              src= {log0o}
+              src= {logo}
               alt=""
               role="presentation"
               width="112"
