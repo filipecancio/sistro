@@ -1,11 +1,16 @@
 import React from 'react';
 import Pages from './pages/Pages';
+import "rbx/index.css";
+import Header from './components/header/Header';
 
 class App extends React.Component {
 
   render() {
     return (
-      <Pages />
+      <div>
+        <Header/>
+        <Pages />
+      </div>
     );
   }
 }
