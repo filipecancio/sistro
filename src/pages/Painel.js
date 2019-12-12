@@ -10,7 +10,6 @@ class Painel extends React.Component {
   render() {
     return (
       <div>
-    <h1>{this.state.boasvindas}</h1>
     <Mapa/>
     </div>
     );

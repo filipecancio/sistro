@@ -4,7 +4,7 @@ import Login from './Login';
 import Painel from './Painel';
 import Mensagem from './Mensagem';
 
-const pages = ()=>{
+const Pages = () =>(
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={() => <Login/>}/>
@@ -12,6 +12,6 @@ const pages = ()=>{
             <Route exact path="/mensagem" component={() => <Mensagem/>}/>
         </Switch>
     </BrowserRouter>
-}
+);
 
-export default pages;
+export default Pages;
