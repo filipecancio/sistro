@@ -1,25 +1,19 @@
 import React from 'react';
-import ReactMapGL from 'react-map-gl';
+import Mapa from './components/map/Mapa'
 
 class App extends React.Component {
 
   state = {
     viewport: {
-      width: '100vw',
-      height: '100vh',
-      latitude: 37.7577,
-      longitude: -122.4376,
-      zoom: 8
-    },
-    token:'pk.eyJ1IjoiY2FuY2l0b28iLCJhIjoiY2s0MjNjbXRsMDd5NDNuc3dwNWtxdG42bSJ9.Nyqu8tg03uh6k7SOu9wx0w'
+      latitude: -22.8218457,
+      longitude: -47.0781176,
+      zoom: 15,
+    }
   };
 
   render() {
     return (
-      <ReactMapGL mapboxApiAccessToken = {this.state.token}
-        {...this.state.viewport}
-        onViewportChange={(viewport) => this.setState({viewport})}
-      />
+      <Mapa propriedades={this.state.viewport}/>
     );
   }
 }
