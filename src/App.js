@@ -3,9 +3,15 @@ import Pages from './pages/Pages';
 import "rbx/index.css";
 
 class App extends React.Component {
-
   render() {
-    return (<div><Pages/></div>);
+
+    const app = {
+      width: '100vw',
+      height: '100vh',
+      overflow: 'hidden'
+    };
+  
+    return (<div style={app}><Pages/></div>);
   }
 }
 
