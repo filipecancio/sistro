@@ -7,7 +7,7 @@ class Login extends React.Component {
   render() {
     const login = {
       backgroundImage: `url(${Background})`,
-      objectFit: "cover",
+      resizeMode: 'contain',
       padding: "10px",
       width: "100vw",
       height:"100vh"
