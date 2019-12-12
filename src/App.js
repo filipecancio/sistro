@@ -5,8 +5,8 @@ class App extends React.Component {
 
   state = {
     viewport: {
-      width: 400,
-      height: 400,
+      width: '100vw',
+      height: '100vh',
       latitude: 37.7577,
       longitude: -122.4376,
       zoom: 8
