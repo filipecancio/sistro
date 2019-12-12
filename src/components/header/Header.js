@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar} from 'rbx';
 import logo from '../../assets/png/logos/logo_01.png';
 import {Link} from 'react-router-dom';
+import "rbx/index.css";
 
 
 const Header = () => (

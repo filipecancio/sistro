@@ -5,7 +5,7 @@ import "rbx/index.css";
 class App extends React.Component {
 
   render() {
-    return (<Pages/>);
+    return (<div><Pages/></div>);
   }
 }
 

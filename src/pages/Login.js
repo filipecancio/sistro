@@ -2,6 +2,7 @@ import React from 'react';
 import { Field, Label, Control, Input, Button } from 'rbx';
 import './Login.css';
 import Header from '../components/header/Header';
+import "rbx/index.css";
 
 class Login extends React.Component {
 
