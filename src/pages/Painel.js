@@ -1,5 +1,6 @@
 import React from 'react';
 import Mapa from '../components/map/Mapa';
+import Header from '../components/header/Header';
 
 class Painel extends React.Component {
 
@@ -10,8 +11,9 @@ class Painel extends React.Component {
   render() {
     return (
       <div>
-    <Mapa/>
-    </div>
+        <Header />
+        <Mapa />
+      </div>
     );
   }
 }

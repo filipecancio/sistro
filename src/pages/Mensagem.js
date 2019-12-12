@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../components/header/Header';
 
 class Mensagem extends React.Component {
 
@@ -8,7 +9,10 @@ class Mensagem extends React.Component {
 
   render() {
     return (
-    <h1>{this.state.boasvindas}</h1>
+      <div>
+        <Header />
+        <h1>{this.state.boasvindas}</h1>
+      </div>
     );
   }
 }
