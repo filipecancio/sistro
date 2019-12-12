@@ -1,0 +1,18 @@
+section {
+    background: url("../assets/jpg/background_login_medium.jpg") no-repeat center ;
+    background-size: cover;
+    padding: 10px;
+    width: 100vw;
+    height: 92vh;
+  }
+  section,
+  .login{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .login{
+      margin: auto;
+      height: 100%;
+  }

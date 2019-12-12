@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        <Pages />
+        <Pages/>
       </div>
     );
   }

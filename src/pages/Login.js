@@ -1,14 +1,29 @@
 import React from 'react';
+import { Field, Label, Control, Input, Button } from 'rbx';
+import './Login.css';
 
 class Login extends React.Component {
 
-  state = {
-    boasvindas: 'oi! Aqui é o login'
-  };
-
   render() {
+
     return (
-    <h1>{this.state.boasvindas}</h1>
+      <section>
+        <div class="login">
+          <Field>
+            <Label>Login</Label>
+            <Control>
+              <Input type="email" placeholder="ex: exemplo@exemplo.com" />
+            </Control>
+          </Field>
+          <Field>
+            <Label>Senha</Label>
+            <Control>
+              <Input type="password" />
+            </Control>
+          </Field>
+          <Button color="dark">entrar</Button>
+        </div>
+      </section>
     );
   }
 }
