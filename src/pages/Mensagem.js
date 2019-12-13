@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/header/Header';
 import { Control, Field, Button, Input } from 'rbx';
+import sendSms,{getSms} from '../components/totalvoice/totalvoiceclient';
 
 class Mensagem extends React.Component {
 
@@ -17,7 +18,9 @@ class Mensagem extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('Um nome foi enviado: ' + this.state.value);
+    alert('Enviamos a mensagem: ' + this.state.value + ' para o motorista.');
+    var data = sendSms("77991444746",this.state.value);
+    getSms(data.dados.id);
     event.preventDefault();
   }
 
